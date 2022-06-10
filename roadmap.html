@@ -114,7 +114,7 @@
     <a href="#" title="Buy/Sell Universal Support Power" class="fixedBTN">BUY USP</a>
   
 
-	<section class="wave-bottom section-road-map-bg">
+	<section class=" wave-bottom section-road-map-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -141,8 +141,8 @@
 						<ul class="road-map-bg-bttn">
 
 							<li>
-								<div class="crt-accnt-bttn">
-									<a href="#">CREATE ACCOUNT</a>
+								<div class="bnnr-join-us-bttn">
+									<a href="#join">Join Our Community</a>
 								</div>
 							</li>
 
@@ -270,13 +270,13 @@
 	</section> -->
 
 
-	<section class="roadmap-area" id="_roadmap">
+	<section class="custom-bt2 roadmap-area" id="_roadmap">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 col-12">
 					<div class="section-title">
 						<h2 class="">Our Roadmap</h2>
-						<p class="text">Name Here is a platform for the future of funding that powering dat for the new
+						<p class="text">USP  is a platform for the future of funding that powering dat for the new
 							equity blockchain.</p>
 					</div>
 				</div>
@@ -314,7 +314,7 @@
 	<!------road-map---wrap----end------->
 
     <!------newsletter---wrap----start------->
-    <section class="my-5">
+    <section class="my-5" id="join">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -508,4 +508,14 @@
 	$(".menu").click(function () {
 		$("#nav").toggleClass("open");
 	});
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
 </script>

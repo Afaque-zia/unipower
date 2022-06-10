@@ -124,7 +124,7 @@
 
 
                 <div class="bnnr-join-us-bttn">
-                    <a href="https://Unipower.io/auth" title="Join Us with Unipower">Join Us</a>
+                    <a href="#join" title="Join Us with Unipower">Join Our Community</a>
                 </div>
 
             </div>
@@ -144,7 +144,7 @@
                 <div class="col-lg-8 offset-lg-2 col-12">
                     <div class="section-title">
                         <h2 class="title">SERVICES</h2>
-                        <p class="text text-white">USP serves the people so that they can support the universe from the help of
+                        <p class="text">USP serves the people so that they can support the universe from the help of
                             crypto. It is the primary service of USP, here we are showing the upcoming services that
                             will support the system to make it stronger and more reliable.</p>
                     </div>
@@ -171,7 +171,7 @@
                     <div class="token-banner-main">
                         <span class="tb-bg"><img src="img/token-bg.png" alt=""></span>
                         <img class="item-bounce" src="img/token-banner.png" alt="">
-                        <a href="#" class="btn-style-3 link hvr-bs btn-hvr-anim-top">Sign Up To Join</a>
+                        <a href="#" class="btn-style-3 link hvr-bs btn-hvr-anim-top">Join Our Community</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-12">
@@ -192,8 +192,16 @@
                     </div>
                 </div>
             </div>
+            
+        </div>
+    </section>
+    <section style="background-color: #001029;">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-12 wow bounceInUp" data-wow-duration="0.9s" data-wow-delay="0.2s"
+                <div class="col-lg-4 col-12 wow bounceInUp" data-wow-duration="0.9s" data-wow-delay="0.2s" style="    display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;"
                     style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.2s; animation-name: bounceInUp;">
                     <div class="token-down-banner">
                         <h2 class="title text-left">Token Distribution</h2>
@@ -206,7 +214,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-8 col-12 wow bounceInUp" data-wow-duration="0.9s" data-wow-delay="0.5s"
+                <div class="col-lg-8 col-12 wow bounceInUp d-flex justify-content-end" data-wow-duration="0.9s" data-wow-delay="0.5s"
                     style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.5s; animation-name: bounceInUp;">
                     <div class="token-down-banner">
                         <img src="img/token-banner-2-2-1.png" alt="">
@@ -487,7 +495,7 @@
 
 
     <!------newsletter---wrap----start------->
-    <section class="my-5">
+    <section class="my-5" id="join">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -676,6 +684,15 @@
     $(".menu").click(function () {
         $("#nav").toggleClass("open");
     });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
 </script>
 
 

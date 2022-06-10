@@ -197,11 +197,11 @@ header {
     top: 10px;
   }
   .sticky .menu .hamburger {
-    background: #fe4d00;
+    background: #f7d220;
   }
   .sticky .menu .hamburger::before,
   .sticky .menu .hamburger::after {
-    background: #fe4d00;
+    background: #f7d220;
   }
 
   .open.sticky .hamburger {
@@ -261,7 +261,7 @@ header {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: #fe4d00;
+    background: #f7d220;
   }
 
   .hamburger::after {
@@ -269,11 +269,11 @@ header {
     -webkit-transform: rotate(-45deg) translate(2px, -2px);
     -ms-transform: rotate(-45deg) translate(2px, -2px);
     transform: rotate(-45deg) translate(2px, -2px);
-    background: #fe4d00;
+    background: #f7d220;
   }
 
   .hamburger {
-    background: #fe4d00;
+    background: #f7d220;
   }
   .hamburger::after {
     -webkit-transform: translateY(5px);
@@ -514,6 +514,9 @@ header {
 .custom-bt {
   border-top: 1px solid #f4a100;
 }
+.custom-bt2 {
+  border-top: 5px solid #fff;
+}
 
 .service-txt h2 {
   font-size: 51px;
@@ -735,8 +738,8 @@ header {
   transition: 0.5s ease;
   text-decoration: none;
   color: #fff;
-  font-size: 17px;
-  font-weight: 500;
+    font-size: 17px;
+    font-weight: 600;
   font-family: Josefin Sans;
   text-align: left;
 }
@@ -1660,6 +1663,11 @@ img {
   transition: 0.5s ease;
   border-radius: 10px;
 }
+@media (max-width:667px){
+  .wy-choose-bx-1 {
+    height: auto;
+  }
+}
 
 .wy-choose-bx-1:hover {
   box-shadow: 1px -1px 5px #bdb8b8;
@@ -2276,8 +2284,7 @@ input .my-inpt:focus {
 
 /* 1.10 Token */
 .token-area {
-  background: #001029;
-  overflow-x: hidden;
+  background: #ffffff;
   position: relative;
   padding: 68px 0 90px;
 }
